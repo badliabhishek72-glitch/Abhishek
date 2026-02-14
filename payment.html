@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-container, .success-container {
+    background: #ffffff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.payment-container h2,
+.success-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .input-group {
+    flex: 1;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background: #5a67d8;
+}
+
+.secure-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
+}
+
+.success-container {
+    display: none;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 50px;
+    color: green;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Payment Form -->
+<div class="payment-container" id="paymentForm">
+    <h2>Payment Details</h2>
+
+    <form onsubmit="showSuccess(event)">
+        <div class="input-group">
+            <label>Cardholder Name</label>
+            <input type="text" placeholder="John Doe" required>
+        </div>
+
+        <div class="input-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="1234567890123456" maxlength="16" required>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Expiry Date</label>
+                <input type="text" placeholder="MM/YY" required>
+            </div>
+
+            <div class="input-group">
+                <label>CVV</label>
+                <input type="password" placeholder="123" maxlength="3" required>
+            </div>
+        </div>
+
+        <button type="submit" class="pay-btn">Pay Now</button>
+        <div class="secure-text">🔒 Secure Payment</div>
+    </form>
+</div>
+
+<!-- Success Message -->
+<div class="success-container" id="successMessage">
+    <div class="success-icon">✔</div>
+    <h2>Payment Successful!</h2>
+    <p>Your transaction has been completed successfully.</p>
+</div>
+
+<script>
+function showSuccess(event) {
+    event.preventDefault(); // Prevent form from refreshing
+
+    // Hide payment form
+    document.getElementById("paymentForm").style.display = "none";
+
+    // Show success message
+    document.getElementById("successMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>

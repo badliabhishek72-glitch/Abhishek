@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+    <meta charset="UTF-8">
+    <title>fashion store </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        
+
+        
+            header {
+                background: linear-gradient(90deg, #d51212, #e3dc18);
+                color: white;
+                padding: 15px;
+                text-align: center;
+            }
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>HUBLI Fashion Store</h1>
+    <nav>
+        <a href="profile.html">Profile</a>  
+        <a href="login.html">Login</a>
+        <a href="#home">Home</a>
+        <a href="product.html">Product</a>
+        <a href="orders.html">order now</a>
+        <a href="cart1.html">cart</a>
+
+
+
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Welcome to Our Store</h2>
+    <p>Discover stylish watches, trendy specs, and premium men shoes,T-shirts at affordable price.</p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+<h3>Mens wear</h3>
+    <div class="product-grid">
+
+        <!-- jacket -->
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.8ZNKUziGVbiCnQ474C474&o=5&pid=21.1&w=140&h=140&rs=1&qlt=100&dpr=1.5&o=2&c=8&pcl=f5f5f5" height="60" alt="Watch">
+           
+            <h3>jaket</h3>
+            <p>$99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+           <img src="https://www.bing.com/th?id=OPAC.x0%2bslRlGWWARJQ474C474&o=5&pid=21.1&w=140&h=140&rs=1&qlt=100&dpr=1.5&o=2&c=8&pcl=f5f5f5" height="60" alt="watch">
+           
+            <h3>T-shirt</h3>
+            <p>₹199</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- pants-->
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.JBPYTJXf1%2f5s%2fw474C474&o=5&pid=21.1&w=140&h=140&rs=1&qlt=100&dpr=1.5&o=2&c=8&pcl=f5f5f5" height="60" alt="Specs">
+            <h3>pant</h3>
+            <p>₹89</p>
+            <button>Add to Cart</button>
+    </div>
+
+        <!-- Men's shirts-->
+       
+        
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.QZQsxz8gmDMKzw474C474&o=5&pid=21.1&w=140&h=200&rs=1&qlt=100&dpr=1.5&o=2&c=8&pcl=f5f5f5" height="60" alt="men classic shirts">
+            <h3> classic shirt</h3>
+            <p>$59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.lmsIgFd9Xk8muQ474C474&o=5&pid=21.1&w=128&h=128&rs=1&qlt=100&dpr=1.5&o=2&bw=6&bc=FFFFFF" height="60" alt="men shoes">
+            <h3> shoes</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.07nVUFC5rB1Ofg474C474&o=5&pid=21.1&w=128&h=128&rs=1&qlt=100&dpr=1.5&o=2&bw=6&bc=FFFFFF" height="60" alt="men shoes">
+            <h3> sneakers</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://opticone.ae/wp-content/uploads/2023/11/feather-eyeglasses-available-in-optic-one_-13.jpg" height="60" alt="men's specs">
+            <h3>speticals </h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="data:image/jpeg;base64,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"
+            <h3> belt</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.robbreportindia.com/_next/image?url=https%3A%2F%2Fcdn.robbreportindia.com%2Feditor-images%2F2026-01-22T07%253A23%253A30.163Z-RR%2520Inline%2520%25281%2529.png&w=3840&q=75"
+            <h3>vantar watch </h3>
+            <p>$59</p>
+            <button>Add to Cart<buy now></buy></button>
+        </div>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61ebHG7ezaL._SX679_.jpg" height="60" alt="men's gogal">
+            <h3>m goggles</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.jockey.in/cdn/shop/files/MV16_NAVY_0103_S125_JKY_1.webp?v=1715316343&width=560" height="60" alt="men's gogal">
+            <h3> track t-shirt</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.jockey.in/cdn/shop/files/9510_NV-NB_0103_S223_JKY_1.webp?v=1725619829&width=560" height="60" alt="men's gogal">
+            <h3> track pants</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OPAC.y5JIZRn4RKHC8w474C474?w=160&h=220&c=17&dpr=1.5&pid=21.1" height="60" alt="men shoes">
+            <h3> shirts</h3>
+            <p>₹59</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/7d/6d/1d/7d6d1d948f777f167b0f733971dcd79b.jpg">
+            <h3>  T-shirt </h3>
+            <p>₹55</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.eVhvr0u6h5kJKw474C474&o=5&pid=21.1&w=140&h=106&rs=1&qlt=100&dpr=1.5&o=2&pcl=f5f5f5" height="60" alt="women's specs">
+            <h3> pants </h3>
+            <p>₹49</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th?id=OPAC.54dh7%2fnPslXMVQ474C474&w=200&h=150&c=17&dpr=1.5&pid=21.1" height="60" alt="women's specs">
+            <h3>snekers </h3>
+            <p>₹39</p>
+            <button>Add to Cart</button>
+        </div>
+      
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.Ww8oLeVWf5TRNA474C474&o=5&pid=21.1&w=128&h=188&rs=1&qlt=100&dpr=1.5&o=2&bw=6&bc=FFFFFF" height="60" alt="women's specs">
+            <h3> specs </h3>
+            <p>₹39</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OPAC.osqNjDJWntnK4g474C474?w=220&h=210&c=17&o=5&dpr=1.5&pid=21.1" height="60" alt="women's specs">
+            <h3> watch </h3>
+            <p>₹39</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/514ul-MJPKL._UL1500_.jpg" height="60" alt="men's gogal">
+            <h3>gogal</h3>
+            <p>₹49</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjS4zjF9qb0if9Q67Xu9huFwdyJTlvuoO_Tg&s"
+            <h3>blazer</h3>
+            <p>₹670</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.bing.com/th?id=OPAC.8eCDnHGLbpMKSw474C474&o=5&pid=21.1&w=140&h=106&rs=1&qlt=100&dpr=1.5&o=2&pcl=f5f5f5" height="60" alt="men's gogal">
+            <h3> track t-pants</h3>
+            <p>₹53</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    
+</div>
+   
+   
+</div>
+<!-- Men's pants-->
+    
+</section>
+
+<footer>
+    <p>&copy; 2026 Men's Fashion Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+</center>
